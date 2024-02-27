@@ -1,0 +1,145 @@
+-----BEGIN SIP TRACE 1E97185A11214979.1709026081.775043 
+2024-02-27 09:28:01.282  Received:
+INVITE sip:152.228.247.209:5090;transport=UDP SIP/2.0
+v: SIP/2.0/UDP 3.123.246.217:5060;rport;branch=z9hG4bKPjd3800b41e83d7e5d7f343969c0425cad
+v: SIP/2.0/UDP 136.243.223.27:5060;rport=5060;received=136.243.223.27;branch=z9hG4bKPja5eb721a-20bd-45c0-8628-55e3f20cae28
+f: <sip:asterisk_reg@3.123.246.217>;tag=fdc02d66-08af-4157-a48b-df4f5e662132
+t: <sip:5116100400@asterisk.novess.n8.voximplant.com>
+m: <sip:asterisk_reg@136.243.223.27:5060>
+i: a2e13c04-c8d0-444b-8087-fa3f4c6cb3c5
+CSeq: 4332 INVITE
+Allow: OPTIONS, REGISTER, SUBSCRIBE, NOTIFY, PUBLISH, INVITE, ACK, BYE, CANCEL, UPDATE, PRACK, MESSAGE, INFO, REFER
+k: 100rel, timer, replaces, norefersub, histinfo
+Session-Expires: 1800
+Min-SE: 90
+Max-Forwards: 69
+User-Agent: FPBX-16.0.40.7(18.21.0)
+VI-Client-IP: 136.243.223.27
+VI-Client-Device: SIP
+VI-Client-Type: other
+Record-Route: <sip:3.123.246.217:5060;transport=UDP;lr>
+c: application/sdp
+l:    341
+
+v=0
+o=- 395855598 395855598 IN IP4 136.243.223.27
+s=Asterisk
+c=IN IP4 136.243.223.27
+t=0 0
+m=audio 11770 RTP/AVP 0 8 3 9 111 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:9 G722/8000
+a=rtpmap:111 G726-32/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=maxptime:140
+a=sendrecv
+-----END SIP TRACE 1E97185A11214979.1709026081.775043
+
+2024-02-27 09:28:01.331 Loading scenario Outbound
+2024-02-27 09:28:01.349 Sent event to JS onPhoneEvent with params [{accessSecureURL = https://www-fr-03-209.voximplant.com:12093/request/BBEDCFD2E8887B68.1709026081.775044_152.228.247.209/7468689A213DC1A8 ; accessURL = http://152.228.247.209:12092/request/BBEDCFD2E8887B68.1709026081.775044_152.228.247.209/7468689A213DC1A8 ; accountId = 8443399 ; applicationId = 11099588 ; config = {acceptReInviteByDefault = true ; } ; initiatorCountry = DE ; logURL = https://storage-gw-de-01.voximplant.com/voxdata-de-logs-secure/2024/02/27/MzFiMGRhZDhiODAzNWZiMjM2ZjlmZWE1OTY5ZGFmMDMvaHR0cDovL3d3dy1mci0wMy0yMDkudm94aW1wbGFudC5jb206ODA4MC9sb2dzLzIwMjQvMDIvMjcvMDkyODAxX0JCRURDRkQyRTg4ODdCNjguMTcwOTAyNjA4MS43NzUwNDRfMTUyLjIyOC4yNDcuMjA5LmxvZw--?sessionid=3282824309 ; name = Application.Started ; nluAddresses = [https://ai-eu-1.voximplant.com/ ;  ] ; sessionId = 3282824309 ; userId = -1 ; } ;  ]
+2024-02-27 09:28:01.349 Sent event to JS onPhoneEvent with params [{callerid = asterisk_reg ; destination = 5116100400 ; displayName = asterisk_reg ; fromURI = sip:asterisk_reg@3.123.246.217 ; headers = {VI-Client-Device = SIP ; VI-Client-IP = 136.243.223.27 ; VI-Client-Type = other ; } ; id = 1E97185A11214979.1709026081.775043 ; name = Application.CallAlerting ; requestIP = 3.123.246.217:5060 ; scheme = {endpoints = { = {audio = [{codecs = [0 ;  8 ;  9 ;  101 ;  ] ; direction = sendrecv ; flows = [{uniq = 0 ; } ;  ] ; type = audio ; uniq = 0 ; } ;  ] ; place = 0 ; type = call ; video = [] ; vox-params = [] ; } ; } ; } ; toURI = sip:5116100400@asterisk.novess.voximplant.com ; } ;  ]
+2024-02-27 09:28:01.412 Executing JS command: EnableMediaStatistics with params [{id = 1E97185A11214979.1709026081.775043 ; } ;  ]
+2024-02-27 09:28:01.412 Executing JS command: AcceptCall with params [{headers = NULL ; id = 1E97185A11214979.1709026081.775043 ; parameters = {} ; } ;  ]
+2024-02-27 09:28:01.413 Executing JS command: CallPSTN with params [{id = _L7zIbVaTlCwHWZUQRXXDIPDFSMPS0g2hlGiTspDLHU ; } ;  {callerid = 5117094306 ; carrier = 0 ; dump = NULL ; number = 5116100400 ; retryOn480 = NULL ; } ;  ]
+2024-02-27 09:28:01.413 Executing JS command: EnableMediaStatistics with params [{id = _L7zIbVaTlCwHWZUQRXXDIPDFSMPS0g2hlGiTspDLHU ; } ;  ]
+2024-02-27 09:28:01.425 CallId=1E97185A11214979.1709026081.775043: Enable media statistics for 1E97185A11214979.1709026081.775043 : https://storage-gw-de-01.voximplant.com/voxdata-de-logs-secure/2024/02/27/YjdjNzM4ZjViOWVkZjY0YzU5Yjg3ZDA3ZTQwMjE5MzEvaHR0cDovL3d3dy1mci0wMy0yMDkudm94aW1wbGFudC5jb206ODA4MC9sb2dzLzIwMjQvMDIvMjcvQkJFRENGRDJFODg4N0I2OC4xNzA5MDI2MDgxLjc3NTA0NF8xNTIuMjI4LjI0Ny4yMDlfMUU5NzE4NUExMTIxNDk3OS4xNzA5MDI2MDgxLjc3NTA0My5jc3Y-?sessionid=3282824309
+
+-----BEGIN SIP TRACE 1E97185A11214979.1709026081.775043 
+2024-02-27 09:28:01.435  Sent:
+SIP/2.0 200 OK
+v: SIP/2.0/UDP 3.123.246.217:5060;rport=5060;received=3.123.246.217;branch=z9hG4bKPjd3800b41e83d7e5d7f343969c0425cad
+v: SIP/2.0/UDP 136.243.223.27:5060;rport=5060;received=136.243.223.27;branch=z9hG4bKPja5eb721a-20bd-45c0-8628-55e3f20cae28
+Record-Route: <sip:3.123.246.217:5060;transport=UDP;lr>
+i: a2e13c04-c8d0-444b-8087-fa3f4c6cb3c5
+f: <sip:asterisk_reg@3.123.246.217>;tag=fdc02d66-08af-4157-a48b-df4f5e662132
+t: <sip:5116100400@asterisk.novess.n8.voximplant.com>;tag=VVVVV152.228.247.209_5090_c6a04cce905e0487ca77b6f4fff8267c
+CSeq: 4332 INVITE
+User-Agent: VIMS
+m: <sip:152.228.247.209:5090>
+Allow: INFO, INVITE, ACK, BYE, CANCEL, UPDATE, SUBSCRIBE, NOTIFY, REFER
+k: replaces
+VI-Call-ID: 1E97185A11214979.1709026081.775043
+VI-Session-ID: BBEDCFD2E8887B68.1709026081.775044_152.228.247.209
+VI-SessionDB-ID: 3282824309
+c: application/sdp
+l:    264
+
+v=0
+o=VIMS 234 2 IN IP4 152.228.247.209
+s=VIMS
+c=IN IP4 152.228.247.209
+b=TIAS:13888000
+t=0 0
+m=audio 10916 RTP/AVP 0 101
+b=TIAS:64000
+b=AS:64
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=rtcp:10917
+a=ptime:20
+2024-02-27 09:28:01.450  Received:
+ACK sip:152.228.247.209:5090 SIP/2.0
+v: SIP/2.0/UDP 3.123.246.217:5060;rport;branch=z9hG4bKPje3b06a12fb3bcb7f9adf61b7d7ac0214
+v: SIP/2.0/UDP 136.243.223.27:5060;rport=5060;received=136.243.223.27;branch=z9hG4bKPj7b2da696-16f0-420b-a0e8-f0f4d64fd715
+f: <sip:asterisk_reg@3.123.246.217>;tag=fdc02d66-08af-4157-a48b-df4f5e662132
+t: <sip:5116100400@asterisk.novess.n8.voximplant.com>;tag=VVVVV152.228.247.209_5090_c6a04cce905e0487ca77b6f4fff8267c
+i: a2e13c04-c8d0-444b-8087-fa3f4c6cb3c5
+CSeq: 4332 ACK
+Max-Forwards: 69
+User-Agent: FPBX-16.0.40.7(18.21.0)
+l: 0
+
+-----END SIP TRACE 1E97185A11214979.1709026081.775043
+
+2024-02-27 09:28:01.450 Sent event to JS onPhoneEvent with params [{displayName = asterisk_reg ; encrypted = false ; headers = {} ; id = 1E97185A11214979.1709026081.775043 ; name = Call.Connected ; scheme = {endpoints = { = {audio = [{codecs = [0 ;  8 ;  9 ;  101 ;  ] ; direction = sendrecv ; ext = [3 ;  5 ;  ] ; flows = [{cname = cname_140699619467280 ; uniq = 0 ; } ;  ] ; uniq = 0 ; } ;  ] ; place = 0 ; type = call ; video = [] ; vox-params = [] ; } ; } ; } ; } ;  ]
+2024-02-27 09:28:01.654 Sent event to JS onPhoneEvent with params [{id = 1E97185A11214979.1709026081.775043 ; name = Call.FirstAudioPacketReceived ; } ;  ]
+
+-----BEGIN SIP TRACE 1E97185A11214979.1709026081.775043 
+2024-02-27 09:28:18.178  Sent:
+SIP/2.0 200 OK
+v: SIP/2.0/UDP 3.123.246.217:5060;rport=5060;received=3.123.246.217;branch=z9hG4bKPj8131b58f10e8c80c727361d917d4bb06
+v: SIP/2.0/UDP 136.243.223.27:5060;rport=5060;received=136.243.223.27;branch=z9hG4bKPj514d1810-073b-4802-968e-1ff4522b84bb
+i: a2e13c04-c8d0-444b-8087-fa3f4c6cb3c5
+f: <sip:asterisk_reg@3.123.246.217>;tag=fdc02d66-08af-4157-a48b-df4f5e662132
+t: <sip:5116100400@asterisk.novess.n8.voximplant.com>;tag=VVVVV152.228.247.209_5090_c6a04cce905e0487ca77b6f4fff8267c
+CSeq: 4333 BYE
+User-Agent: VIMS
+Contact: sip:152.228.247.209:5090
+l: 0
+
+2024-02-27 09:28:18.178  Received:
+BYE sip:152.228.247.209:5090 SIP/2.0
+v: SIP/2.0/UDP 3.123.246.217:5060;rport;branch=z9hG4bKPj8131b58f10e8c80c727361d917d4bb06
+v: SIP/2.0/UDP 136.243.223.27:5060;rport=5060;received=136.243.223.27;branch=z9hG4bKPj514d1810-073b-4802-968e-1ff4522b84bb
+f: <sip:asterisk_reg@3.123.246.217>;tag=fdc02d66-08af-4157-a48b-df4f5e662132
+t: <sip:5116100400@asterisk.novess.n8.voximplant.com>;tag=VVVVV152.228.247.209_5090_c6a04cce905e0487ca77b6f4fff8267c
+i: a2e13c04-c8d0-444b-8087-fa3f4c6cb3c5
+CSeq: 4333 BYE
+Reason: Q.850;cause=16
+Max-Forwards: 69
+User-Agent: FPBX-16.0.40.7(18.21.0)
+l: 0
+
+-----END SIP TRACE 1E97185A11214979.1709026081.775043
+
+2024-02-27 09:28:18.179 Sent event to JS onPhoneEvent with params [{cost = 0.003 ; direction = any Incoming SIP ; duration = 17 ; headers = {Reason = Q.850;cause=16 ; } ; id = 1E97185A11214979.1709026081.775043 ; internalCode = 16 ; name = Call.Disconnected ; } ;  ]
+2024-02-27 09:28:18.181 Executing JS command: HangupCall with params [{code = 603 ; headers = NULL ; id = _L7zIbVaTlCwHWZUQRXXDIPDFSMPS0g2hlGiTspDLHU ; } ;  ]
+2024-02-27 09:28:18.195 Terminating request..., stack=VoxEngine.terminate@/voxengine.js:68:51
+inc_ended@Outbound:37:19
+dispatchEvent@/eventbus.js:57:32
+Call/this.dispatchEvent@/call.js:330:48
+Application/this.onPhoneEvent@/application.js:808:21
+onPhoneEvent@/main.js:156:21
+@/ line 1 > eval:1:13
+JSession_onCall@/:1:80
+2024-02-27 09:28:18.261 Executing JS command: terminating with params []
+2024-02-27 09:28:18.261 Terminating (onClose)
+2024-02-27 09:28:18.273 Executing JS command: close with params {CpuMillis = 186 ; }
+2024-02-27 09:28:18.273 Normal termination
+2024-02-27 09:28:18.273 Session terminated
